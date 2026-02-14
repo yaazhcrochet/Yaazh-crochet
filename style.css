@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f7f1f6, #f1e6f3);
+  color: #4a3a4a;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #7a2e8f;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #7a2e8f;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.insta {
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+}
+
+.whatsapp {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* CREATIONS */
+.creations {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.creations h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* WHY SECTION */
+.why {
+  background: #f3e6f6;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 70px 20px;
+  text-align: center;
+  font-style: italic;
+  background: #efe0f3;
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #6a1b9a;
+  color: white;
+}

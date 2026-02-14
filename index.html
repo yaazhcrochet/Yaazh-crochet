@@ -1,285 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yaazh Crochet | Handmade With Love</title>
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
-
-body{
-  background:#faf7fb;
-  color:#333;
-  scroll-behavior:smooth;
-}
-
-/* NAVBAR */
-.logo-container{
-  display:flex;
-  align-items:center;
-}
-
-.logo-container img{
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  margin-right:10px;
-  object-fit:cover;
-}
-
-nav h2{
-  color:#9c27b0;
-  font-weight:700;
-}
-
-nav a{
-  text-decoration:none;
-  color:#555;
-  margin-left:18px;
-  font-size:14px;
-}
-
-nav a:hover{
-  color:#9c27b0;
-}
-
-/* HERO */
-.hero{
-  text-align:center;
-  padding:90px 20px;
-  background:linear-gradient(135deg,#fbe9e7,#f3e5f5);
-}
-
-.hero h1{
-  font-size:42px;
-  color:#6a1b9a;
-  margin-bottom:15px;
-}
-
-.hero p{
-  max-width:650px;
-  margin:auto;
-  font-size:16px;
-  margin-bottom:30px;
-}
-
-/* BUTTONS */
-.btn{
-  padding:14px 28px;
-  border:none;
-  border-radius:30px;
-  font-size:15px;
-  cursor:pointer;
-  margin:6px;
-  transition:0.3s;
-}
-
-.insta{
-  background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-  color:white;
-}
-
-.whatsapp{
-  background:#25D366;
-  color:white;
-}
-
-.btn:hover{
-  transform:scale(1.05);
-}
-
-/* SECTION */
-.section{
-  padding:70px 8%;
-  text-align:center;
-}
-
-.section h2{
-  margin-bottom:40px;
-  color:#6a1b9a;
-}
-
-/* PRODUCTS */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.card{
-  background:white;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-6px);
-}
-
-.card img{
-  width:100%;
-  height:260px;
-  object-fit:cover;
-}
-
-.card h3{
-  padding:15px;
-  font-size:18px;
-}
-
-/* WHY US */
-.features{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:25px;
-}
-
-.feature-box{
-  background:white;
-  padding:30px;
-  border-radius:15px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.06);
-}
-
-.feature-box h3{
-  color:#9c27b0;
-  margin-bottom:10px;
-}
-
-/* TESTIMONIAL */
-.testimonial{
-  background:#f3e5f5;
-  padding:60px 8%;
-  text-align:center;
-}
-
-.testimonial p{
-  max-width:700px;
-  margin:auto;
-  font-style:italic;
-}
-
-/* CONTACT */
-.contact p{
-  margin-bottom:20px;
-}
-
-/* FOOTER */
-footer{
-  background:#6a1b9a;
-  color:white;
-  text-align:center;
-  padding:25px;
-  font-size:14px;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-  .hero h1{
-    font-size:30px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Yaazh Crochet | Luxury Handmade</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="logo-container">
-    <img src="logo.png" alt="Yaazh Crochet Logo">
-    <h2>Yaazh Crochet</h2>
-  </div>
+<header>
+  <div class="logo">Yaazh Crochet</div>
+  <nav>
+    <a href="#">Products</a>
+    <a href="#">Why Us</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-  <div>
-    <a href="#products">Products</a>
-    <a href="#why">Why Us</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<!-- HERO -->
 <section class="hero">
   <h1>Luxury Handmade Crochet Creations 💜</h1>
   <p>Beautiful crochet designs handcrafted with care. Custom-made pieces for every special occasion.</p>
-  <button class="btn insta" onclick="openInstagram()">DM on Instagram</button>
-  <button class="btn whatsapp" onclick="openWhatsApp()">Order on WhatsApp</button>
+  <div class="buttons">
+    <a href="#" class="btn insta">DM on Instagram</a>
+    <a href="#" class="btn whatsapp">Order on WhatsApp</a>
+  </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="section" id="products">
+<section class="creations">
   <h2>Our Creations ✨</h2>
-  <div class="grid">
+  <div class="cards">
     <div class="card">
-      <img src="flower.jpg">
+      <img src="flowers.jpg">
       <h3>Crochet Flowers</h3>
     </div>
     <div class="card">
       <img src="toys.jpg">
-      <h3>Crochet toys</h3>
+      <h3>Crochet Toys</h3>
     </div>
     <div class="card">
       <img src="keychain.jpg">
-      <h3>Crochet keychain</h3>
+      <h3>Crochet Keychains</h3>
     </div>
   </div>
 </section>
 
-<!-- WHY US -->
-<section class="section" id="why">
+<section class="why">
   <h2>Why Choose Yaazh Crochet?</h2>
   <div class="features">
-    <div class="feature-box">
+    <div class="feature">
       <h3>100% Handmade</h3>
-      <p>Each product is carefully crafted with love and attention to detail.</p>
+      <p>Each product is crafted with love and attention to detail.</p>
     </div>
-    <div class="feature-box">
+    <div class="feature">
       <h3>Custom Orders</h3>
       <p>Personalized designs made just the way you want.</p>
     </div>
-    <div class="feature-box">
+    <div class="feature">
       <h3>Premium Quality</h3>
       <p>High-quality yarn and long-lasting finish.</p>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIAL -->
 <section class="testimonial">
-  <h2 style="color:#6a1b9a;margin-bottom:20px;">Customer Love 💕</h2>
-  <p>“Absolutely beautiful work! The quality and detailing are amazing. Totally worth it.”</p>
+  <h2>Customer Love 💕</h2>
+  <p>"Absolutely beautiful work! The quality and detailing are amazing."</p>
 </section>
 
-<!-- CONTACT -->
-<section class="section contact" id="contact">
+<section class="contact">
   <h2>Get In Touch</h2>
   <p>Place your custom order through Instagram or WhatsApp.</p>
-  <button class="btn insta" onclick="openInstagram()">Instagram</button>
-  <button class="btn whatsapp" onclick="openWhatsApp()">WhatsApp</button>
+  <div class="buttons">
+    <a href="#" class="btn insta">Instagram</a>
+    <a href="#" class="btn whatsapp">WhatsApp</a>
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   © 2026 Yaazh Crochet | Handmade with 💜
 </footer>
-
-<script>
-function openInstagram(){
-  window.open("https://www.instagram.com/yaazh__official_/","_blank");
-}
-
-function openWhatsApp(){
-  window.open("https://wa.me/918072280985","_blank");
-}
-</script>
 
 </body>
 </html>
